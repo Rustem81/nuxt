@@ -24,10 +24,123 @@
             Recipe
         },
         asyncData(){
+            axios.get('http://localhost/ElTest/manual.php')
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
             return new Promise((resolve, reject) => {
                 setTimeout(()=>{
                     resolve({
                         recipes:[
+                            {
+                                id:"1",
+                                title: "Пицца",
+                                previewText:"Суппер итальянская Пицца!!!",
+                                thumbnail:"https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+
+                            },
+                            {
+                                id:"2",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"3",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"1",
+                                title: "Пицца",
+                                previewText:"Суппер итальянская Пицца!!!",
+                                thumbnail:"https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+
+                            },
+                            {
+                                id:"2",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"3",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"1",
+                                title: "Пицца",
+                                previewText:"Суппер итальянская Пицца!!!",
+                                thumbnail:"https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+
+                            },
+                            {
+                                id:"2",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"3",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"1",
+                                title: "Пицца",
+                                previewText:"Суппер итальянская Пицца!!!",
+                                thumbnail:"https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+
+                            },
+                            {
+                                id:"2",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"3",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"1",
+                                title: "Пицца",
+                                previewText:"Суппер итальянская Пицца!!!",
+                                thumbnail:"https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+
+                            },
+                            {
+                                id:"2",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
+                            {
+                                id:"3",
+                                title: "Азия",
+                                previewText:"Восточная еда от узбека!!!",
+                                thumbnail:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Indian-Food-wikicont.jpg/800px-Indian-Food-wikicont.jpg"
+
+                            },
                             {
                                 id:"1",
                                 title: "Пицца",
